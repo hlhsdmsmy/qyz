@@ -1,0 +1,89 @@
+@import url("base.css");
+body{
+    margin-top:5%;
+    background: #000000;
+}
+.Topbox{
+    width: 850px;
+    height:auto;
+    margin: 0 auto 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.photo{
+    width: 540px;
+    height: 360px;
+}
+.photo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.hot{
+    transform: scale(2,2);
+    box-shadow: 0 0 0 3000px rgba(0,0,0,0.8);
+    z-index: 9;
+}
+.Topbox > [class*=btn]{
+    width: 18px;
+    height: 55px;
+    background: #fff;
+}
+.Topbox > .Lbtn{
+    background: url('../img/focus_lr0918.png') no-repeat -3px -5px;
+}
+.Topbox > .Lbtn:hover{
+    background: url('../img/focus_lr0918.png') no-repeat -3px -66px;
+}
+.Topbox > .Rbtn{
+    background: url('../img/focus_lr0918.png') no-repeat -60px -5px;
+}
+.Topbox > .Rbtn:hover{
+    background: url('../img/focus_lr0918.png') no-repeat -60px -66px;
+}
+.ListBox{
+    width: 850px;
+    height:116px;
+    margin: 0 auto 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photoList{
+    width: 746px;
+    height:100%;
+    border:1px solid #ccc;
+    overflow: hidden;
+}
+.photoList ul{
+    /*width: 4320px;*/
+    height:104px;
+    transition: .5s;
+}
+.photoList ul li{
+    width:auto;
+    height: 104px;
+    border: 2px solid #ccc;
+    float: left;
+}
+.photoList > ul li.active{
+    border-color:deepskyblue;
+}
+.photoList > ul > li > img{
+    width:120px;
+    height:100px;
+    padding: 10px 0;
+}
+.LLbtn,.LRbtn{
+    width: 40px;
+    height:110px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 35px;
+    font-weight: bold;
+    color:#ccc;
+}
